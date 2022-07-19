@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="img" src="/assets/image/Header.png" alt="Logo Alura">
+        </div>
+    </header>
+
+    <main>
+        <section class="principal">
+            <div class="conteiner">
+                <button id="btnGame">Começar a jogar</button>
+                <button  id="btnNew" >Adicionar Palavra</button>
+            </div>
+        </section>
+            
+        <section class="adicionaPalavra invisivel">
+            <div class="conteiner">
+                <form >
+                    <textarea type="text" name="palavra" id="palavra" maxlength="10"  required placeholder="Digite uma palavra"></textarea>
+                    <span>Apenas Letras - Max. 10 Letras</span>
+                    <div class="buttons">
+                        <button id="btnPalavra">Salvar e começar</button>
+                        <button id="btnSair"> Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="jogo invisivel">
+            <canvas id="forca" height="350px" width="600px"></canvas>
+            <h1 class="resposta"></h1>
+            <p class="letraIncorreta"></p>            
+        </section>
+            
+        </main>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Desenvolvido por: <a href="https://www.linkedin.com/in/eufelipelucio/">Felipe Lúcio</a></p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
